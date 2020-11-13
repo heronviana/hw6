@@ -1,0 +1,78 @@
+<!--hw6.html
+Heron Melo
+heron_melo@student.uml.edu
+Student of GUI Programming I 91.61 - UML
+File Created on: 11/12/2020
+In this assignment we will create a dynamic table using JQuery for validation.-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/hw6.css" />
+
+    <title>HW 6</title>
+  </head>
+
+  <body>
+    <!-- container -->
+    <div class="container" id="form">
+      <h1 class="text-center">Multiplication Table with JQuery Validation</h1>
+      <p class="lead text-center">Enter Min and Max values</p>
+      <!--form-->
+      <div class="jumbotron">
+      <form class="form" id="timesTableForm">
+        <div class="row">
+          <div class="form-group col-md-2">
+            <label for="minColValInput">Min Col Value:</label>
+            <input type="number" class="form-control" id="minColValInput" name="minColValInput" required/>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="maxColValInput">Max Col Value:</label>
+            <input
+              type="number" class="form-control" id="maxColValInput" name="maxColValInput" required/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-2">
+            <label for="minRowValInput">Min Row Value:</label>
+            <input type="number" class="form-control" id="minRowValInput" name="minRowValInput" required/>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="maxRowValInput">Max Row Value:</label>
+            <input type="number" class="form-control" id="maxRowValInput" name="maxRowValInput" required/>
+          </div>
+        </div>
+
+        <!-- submit button  -->
+
+          <button type="submit" class="btn btn-success" name="button">Submit</button>
+
+        <p id="errorMessage"></p> <!--error message-->
+      </form>
+      </div>
+    </div>
+
+    <div class="container">
+      <table id="multiplicationTable"></table>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- jQuery Validation -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/hw6.js"></script>
+  </body>
+</html>
