@@ -12,10 +12,10 @@ $(document).ready(function () { $(".form").submit(function (e) {
     // Validation rules
     .validate({
       rules: {
-        minColValInput: {required: true, range: [-60, 60],},
-        maxColValInput: {required: true, range: [-60, 60], greaterThan: "#minColValInput",},
-        minRowValInput: {required: true, range: [-60, 60],},
-        maxRowValInput: {required: true, range: [-60, 60], greaterThan: "#minRowValInput",},},
+        minColValInput: {required: true, range: [-50, 50],},
+        maxColValInput: {required: true, range: [-50, 50], greaterThan: "#minColValInput",},
+        minRowValInput: {required: true, range: [-50, 50],},
+        maxRowValInput: {required: true, range: [-50, 50], greaterThan: "#minRowValInput",},},
       // Error messages
       messages: {
         minColValInput: {required: "Min Col Value Required!", range: "Must be between -50 to 50.",},
